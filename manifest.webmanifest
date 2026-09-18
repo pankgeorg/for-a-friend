@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "violence may happen to a friend...",
+  "short_name": "for a friend",
+  "lang": "el",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#152d35",
+  "theme_color": "#152d35",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "src": "./icon-192.png"
+    },
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "src": "./icon-512.png"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.*
+*.log
+my-account*.json
+.DS_Store

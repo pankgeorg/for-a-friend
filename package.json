@@ -1,0 +1,1 @@
+{"name":"for-a-friend","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.mjs","test":"node --test","check":"node --check app.js && node --check sw.js"},"engines":{"node":">=22"}}
