@@ -7,6 +7,7 @@ export function makeReport(input, language, scenarioId) {
     narrative, incidentDate: String(input.incidentDate || ''),
     approximatePlace: String(input.place || '').trim(),
     relationship: String(input.relationship || '').trim(),
+    callback: {phone: String(input.callbackPhone || '').trim(), requested: false},
     recordedAtDeviceTime: new Date().toISOString(),
     provenance: 'Self-written account; device time is unverified. No independent verification or submission.',
     sharing: {submitted: false, geographicAggregationConsent: false}};

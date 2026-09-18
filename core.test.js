@@ -23,3 +23,10 @@ test('manifest and all precache assets exist, including install icons',async()=>
  const sw=await readFile(new URL('./sw.js',import.meta.url),'utf8');
  for(const match of sw.matchAll(/'\.\/([^']+)'/g)) await readFile(new URL(match[1],import.meta.url));
 });
+test('callback number is optional and never implies a submitted request',()=>{
+ const empty=makeReport({narrative:'Test'},'el');
+ assert.deepEqual(empty.callback,{phone:'',requested:false});
+ const withPhone=makeReport({narrative:'Test',callbackPhone:' +30 210 000 0000 '},'el');
+ assert.deepEqual(withPhone.callback,{phone:'+30 210 000 0000',requested:false});
+ assert.equal(withPhone.sharing.submitted,false);
+});

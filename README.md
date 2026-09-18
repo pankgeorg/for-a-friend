@@ -47,3 +47,9 @@ Build a reporting backend only after defining consent, retention, deletion, acce
 Before a public service launch: specialist content review, assistive-technology testing, device install testing, localized support routes, backend security design and an accessible report review/export format beyond JSON.
 
 PWA implementation reference: [MDN installation guide](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable).
+
+## Interaction update
+
+The end screen has floating “it's ok” / “it's not ok” controls. Either response opens the scenario explanation, without grading the reader or treating the response as a report. The help panel offers Greece's police emergency number 100 and SMS to 100, following the [official Hellenic Police guidance](https://www.astynomia.gr/odigos-tou-politi/chrisimes-symvoules/endooikogeneiaki-via/) checked on 2026-09-18. Calling and texting require the reader's action.
+
+An optional callback phone is included in exported accounts as `callback.phone`; `callback.requested` remains false. No callback service is connected. The header cycles through inclusive phrases every 5.5 seconds in the selected language, stopping with the motion control or a reduced-motion preference.
